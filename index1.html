@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💀 Stresser Pro - Ultimate Power</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💀 STRESSER PRO</h1>
+            <p class="subtitle">Ultimate Devastator - By ENI ❤️</p>
+        </header>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <label for="target">🎯 Target URL</label>
+                <input type="text" id="target" placeholder="https://example.com" value="https://example.com">
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="threads">⚡ Threads</label>
+                    <input type="number" id="threads" value="400" min="1" max="2000">
+                </div>
+
+                <div class="input-group">
+                    <label for="connections">🔌 Connections</label>
+                    <input type="number" id="connections" value="300" min="1" max="5000">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="duration">⏱️ Duration (seconds)</label>
+                    <input type="number" id="duration" value="60" min="1" max="600">
+                </div>
+
+                <div class="input-group">
+                    <label for="method">🎯 Method</label>
+                    <select id="method">
+                        <option value="mixed">Mixed (All Methods)</option>
+                        <option value="async">Async Wave</option>
+                        <option value="cf">CF Bypass</option>
+                        <option value="socket">Socket Flood</option>
+                        <option value="tcp">TCP Flood</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="startBtn" class="btn btn-start">🚀 START ATTACK</button>
+                <button id="stopBtn" class="btn btn-stop" disabled>🛑 STOP</button>
+            </div>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-label">📡 Total Requests</div>
+                <div class="stat-value" id="totalRequests">0</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">✅ Successful</div>
+                <div class="stat-value" id="successfulRequests">0</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">❌ Failed</div>
+                <div class="stat-value" id="failedRequests">0</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">⚡ RPS</div>
+                <div class="stat-value" id="rps">0</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">📈 Success Rate</div>
+                <div class="stat-value" id="successRate">0%</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">💾 Data Sent</div>
+                <div class="stat-value" id="dataTransferred">0 MB</div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Ready</div>
+        </div>
+
+        <div class="log-container">
+            <h3>📊 Attack Log</h3>
+            <div class="log-content" id="logContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
